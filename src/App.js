@@ -9,7 +9,7 @@ function App() {
   return (
 
     <Provider store={store}>
-<div className='.'>
+<div className='container'>
   <HooksCakeContainer/>
 <CakeContainer/>
 </div>
