@@ -1,5 +1,6 @@
 import {FETCH_USERS_REQUEST,FETCH_USERS_SUCCESS,FETCH_USERS_FAILURE} from './userType'
 
+
 const initialState={
     loading:false,
     users:[],
@@ -25,6 +26,9 @@ const reducer=(state=initialState,action)=>{
                         loading:false,
                         error:action.payload
                     }
+
+                    default:
+                        return state
     }
     }
 
